@@ -6,6 +6,9 @@ networks:
     name: infra-net
     driver: bridge
 
+volumes:
+  letsencrypt:
+  
 services:
   traefik:
     image: traefik:v3.1
